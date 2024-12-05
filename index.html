@@ -3,38 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tenditimes - Berita Terkini</title>
+<meta name="description" content="Tenditimes - Situs berita terbaru, terpercaya, dan terupdate tentang politik, ekonomi, teknologi, olahraga, dan lainnya. Powered by Tendihub.">
+<meta name="keywords" content="berita, terbaru, tenditimes, politik, ekonomi, teknologi, olahraga, tendihub, berita hari ini">
+<meta name="author" content="Tenditimes">
+    <title>Tenditimes - Berita Terbaru dan Terpercaya | Powered by Tendihub</title>
     <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
+    <!-- Memanggil file JavaScript eksternal -->
+    <script src="script.js" defer></script>
 </head>
 <body>
+
     <header>
-        <h1>Tenditimes</h1>
-    <p>Menjelajahi Dunia Informasi dengan Elegansi</p>
-        <nav>
-            <ul>
-                <li><a href="internasional.html">Berita Internasional</a></li>
-                <li><a href="nasional.html">Berita Nasional</a></li>
-                <li><a href="pendiri.html">Berita Pendiri Tendigrup</a></li>
-                <li><a href="tendigrup.html">Berita tendigrup</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="berita-internasional">
-        <h2>Berita Internasional</h2>
-        <p><a href="internasional.html">Klik di sini untuk membaca berita internasional terkini.</a></p>
-    </section>
-    <section id="berita-nasional">
-        <h2>Berita Nasional</h2>
-        <p><a href="nasional.html">Klik di sini untuk membaca berita nasional terkini.</a></p>
-    </section>
-    <section id="pendiri-tendigrup">
-        <h2>Berita Pendiri Tendigrup</h2>
-        <p><a href="pendiri.html">Klik di sini untuk mengetahui lebih lanjut tentang pendiri Tendigrup.</a></p>
-    </section>
+    <div class="header-container">
+        <h1>Tenditimes - Berita Terbaru</h1>
+        <id="clock" class="section-clock">
+        <h2>Waktu Saat Ini</h2>
+        <div id="time" class="clock">
+            <!-- Jam akan muncul di sini -->
+        </div>
+    </div>
+</header>
+
+
+    <!-- Kategori Berita -->
+    <div class="categories">
+        <h2>Kategori Berita</h2>
+        <ul>
+            <li><a href="#politik">Politik</a></li>
+            <li><a href="#ekonomi">Ekonomi</a></li>
+            <li><a href="#teknologi">Teknologi</a></li>
+            <li><a href="#olahraga">Olahraga</a></li>
+        </ul>
+    </div>
+
+    <!-- Daftar Berita -->
+    <div class="container">
+        <!-- Kategori Politik -->
+        <div id="politik" class="category-section">
+            <h3>Politik</h3>
+            <div class="news-item">
+                <h4>Pilkada 2024: Pengumuman Hasil Rekapitulasi</h4>
+                <p><strong>Tanggal:</strong> 6 Desember 2024</p>
+                <p>Pilkada 2024 menjadi sorotan utama di Indonesia. Hasil rekapitulasi suara yang masih berlangsung menunjukkan bahwa beberapa pasangan calon sudah dipastikan menang di Jakarta, sementara daerah lainnya masih menunggu pengumuman resmi. Banyak pembicaraan mengenai transparansi dan efektivitas pelaksanaan pilkada.</p>
+            </div>
+        </div>
+
+        <!-- Kategori Ekonomi -->
+        <div id="ekonomi" class="category-section">
+            <h3>Ekonomi</h3>
+            <div class="news-item">
+                <h4>IKN Siap Dihuni: Pembangunan Infrastruktur di Ibu Kota Baru</h4>
+                <p><strong>Tanggal:</strong> 5 Desember 2024</p>
+                <p>Kementerian Pekerjaan Umum dan Perumahan Rakyat (PUPR) memastikan bahwa seluruh kantor dan hunian di Ibu Kota Nusantara (IKN) akan siap dipakai pada Desember 2024. Pembangunan di IKN, yang bertujuan memindahkan ibu kota negara, kini memasuki tahap akhir. Proyek ini menjadi perhatian banyak pihak, terutama terkait dampaknya pada pembangunan nasional.</p>
+            </div>
+        </div>
+
+        <!-- Kategori Teknologi -->
+        <div id="teknologi" class="category-section">
+            <h3>Teknologi</h3>
+            <div class="news-item">
+                <h4>Timnas Putri Indonesia Juara Piala AFF</h4>
+                <p><strong>Tanggal:</strong> 4 Desember 2024</p>
+                <p>Tim nasional sepak bola putri Indonesia meraih kemenangan gemilang di Piala AFF Putri 2024. Setelah perjuangan panjang, mereka berhasil merebut gelar juara dan mendapat dukungan luas dari masyarakat Indonesia. Keberhasilan ini mengangkat semangat olahraga di Indonesia.</p>
+            </div>
+        </div>
+
+        <!-- Kategori Olahraga -->
+        <div id="olahraga" class="category-section">
+            <h3>Olahraga</h3>
+            <div class="news-item">
+                <h4>Kota Mojokerto Terpilih Sebagai Kota Terinovatif 2024</h4>
+                <p><strong>Tanggal:</strong> 3 Desember 2024</p>
+                <p>Kota Mojokerto mendapat penghargaan sebagai Kota Terinovatif dalam Indonesian Government Award (IGA) 2024. Penghargaan ini diberikan berkat kemajuan yang ditunjukkan Mojokerto dalam sektor teknologi dan digital, yang mendukung pembangunan kota yang lebih baik dan modern.</p>
+            </div>
+        </div>
+
+        <!-- Kategori Umum -->
+        <div id="umum" class="category-section">
+            <h3>Krisis Kesehatan Global: Dampak pada Indonesia</h3>
+            <div class="news-item">
+                <h4>Diskusi Global tentang Krisis Kesehatan</h4>
+                <p><strong>Tanggal:</strong> 2 Desember 2024</p>
+                <p>Diskusi global mengenai krisis kesehatan dan dampaknya terhadap perekonomian terus berkembang. Indonesia semakin memperkuat kebijakan kesehatan publik untuk menghadapi tantangan kesehatan global, dengan fokus pada pemulihan ekonomi pasca-pandemi.</p>
+            </div>
+        </div>
+    </div>
+
     <footer>
-        <p>&copy; 2024 Tenditimes. All Rights Reserved.</p>
+        <p>&copy; 2024 Tenditimes | Powered by Tendihub</p>
     </footer>
+
 </body>
 </html>
